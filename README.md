@@ -1,1 +1,163 @@
-# holbertonschool-monty
+<p  align="center">
+<img  width="409"  height="128"  src="https://assets.website-files.com/6105315644a26f77912a1ada/610540e8b4cd6969794fe673_Holberton_School_logo-04-04.svg%22%3E
+</p>
+
+  
+
+# Monty - Bytecode Interpreter
+
+  
+
+Monty 0.98 is a scripting language that is first compiled into Monty byte codes (Just like Python). It relies on a unique stack, with specific instructions to manipulate it. The goal of this project is to create an interpreter for Monty ByteCodes files.
+
+ 
+
+
+### The Monty Program
+
+  
+
+The aim of the project is to build on understanding of data structures, specifically Stacks and Queues and the use of FIFO and LIFO, by implementing features that run various monty opcodes e.g push, pall, pop, pint etc:
+
+ ![enter image description here](data:image/jpeg;base64,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)
+  
+
+### Monty byte code files
+
+  
+
+Files containing Monty byte codes usually have the .m extension. Most of the industry uses this standard but it is not required by the specification of the language. There is not more than one instruction per line. There can be any number of spaces before or after the opcode and its argument:
+
+  
+
+```c
+
+beldine@ubuntu:~/monty$ cat -e bytecodes/000.m
+
+push 0$
+
+push 1$
+
+push 2$
+
+push 3$
+
+pall $
+
+push 4$
+
+push 5 $
+
+push 6 $
+
+pall$
+
+beldine@ubuntu:~/monty$
+
+```
+
+Monty byte code files can contain blank lines (empty or made of spaces only, and any additional text after the opcode or its required argument is not taken into account:
+
+  
+
+```c
+
+beldine@ubuntu:~/monty$ cat -e bytecodes/001.m
+
+push 0 Push 0 onto the stack$
+
+push 1 Push 1 onto the stack$
+
+$
+
+push 2$
+
+push 3$
+
+pall $
+
+$
+
+$
+
+$
+
+push 4$
+
+$
+
+push 5 $
+
+push 6 $
+
+$
+
+pall This is the end of our program. Monty is awesome!$
+
+beldine@ubuntu:~/monty$
+
+```
+## Installation
+
+Clone this repository:
+
+>  git clone https://github.com/JuliethAnarosa/holbertonschool-monty.git
+
+
+## Compilation & Output
+
+> Your code should be compiled this way:
+> gcc -Wall -Werror -Wextra -pedantic -std=c90 *.c -o monty
+
+Any output will be printed on stdout. Any error message will be printed on stderr.
+
+## Usage
+
+```
+$ ./monty file
+```
+Where file is the path to the file containing Monty byte code.
+
+
+## Example:
+```
+beldine@ubuntu:~/monty$ cat -e bytecodes/00.m
+push 1$
+push 2$
+push 3$
+pall$
+beldine@ubuntu:~/monty$ ./monty bytecodes/00.m
+3
+2
+1
+beldine@ubuntu:~/monty$
+
+```
+
+## Technologies used
+
+-   Language: C programming language, Bash
+-   Operating System: Ubuntu 20.04
+-   Style: Betty
+-   Compiler: gcc
+-   Version control: Git
+
+## Betty coding style:
+
+  
+
+All files are written in C and follows the Betty coding style for Holberton School. For more detail, check this page:
+
+  
+
+[Betty style documentation](https://github.com/holbertonschool/Betty/wiki)
+
+  
+  
+
+
+## Author
+
+##### [Julieth Alvarado](https://github.com/JuliethAnarosa) - america02anarosa@gmail.com
+
+#####   [Drixner Condor](https://github.com/Drixner) - drixnerrafael1@gmail.com
