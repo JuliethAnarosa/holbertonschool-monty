@@ -63,9 +63,9 @@ typedef struct arg
 } arg;
 arg Arg;
 
-void push_error(unsigned int line_number);
-void usage_error(void);
 void file_error(char *file);
+void usage_error(void);
+void push_error(unsigned int line_number);
 void pint_error(unsigned int line_number);
 
 void free_stack(stack_t **stack);
