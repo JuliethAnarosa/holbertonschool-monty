@@ -19,12 +19,9 @@ int main(int argc, char *argv[])
 	STACK = NULL;
 	if (argc != 2)
 		usage_error();
-	
 	fd = fopen(argv[1], "r");
-	
 	if (!fd)
 		file_error(argv[1]);
-	
 	while ((getline(&line, &size, fd)) != -1)
 	{
 		if (*line == '\n')
