@@ -6,7 +6,7 @@
  *@stack: the stack to print the top element of
  *@line_number: the line number where the particular
  *              opcode function is specified
- * 
+ *
  *Return: void
  */
 void pint(stack_t **stack, unsigned int line_number)
